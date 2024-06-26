@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: url("https://st5.depositphotos.com/35914836/63547/i/450/depositphotos_635479512-stock-photo-brown-wooden-wall-texture-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: cursive;
+}
+.search-bar {
+  display: flex;
+  background-color: rgb(214, 241, 251);
+  align-items: center;
+  border-radius: 50px;
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  position: relative;
+  transition: width 1.5s;
+}
+.magnifier {
+  left: 23px;
+  height: 25px;
+  position: absolute;
+}
+.google-voice {
+  right: 25px;
+  width: 30px;
+  position: absolute;
+  transition: width 0.4s;
+  transition-delay: 1s;
+}
+.search-input {
+  border: none;
+  background: transparent;
+  margin: 10px 50px;
+  width: 100%;
+  outline: none;
+  color: rgb(100, 100, 100);
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+.active.search-bar {
+  width: 50px;
+}
+.active .search-input {
+  width: 0px;
+}
+.active .google-voice {
+  width: 0px;
+}
